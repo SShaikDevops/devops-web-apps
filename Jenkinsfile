@@ -8,7 +8,7 @@ pipeline
 	stages{
 		stage('Code Checkout'){
 			steps{
-				git branch: 'main', url: 'https://github.com/narayanareddy2143/Devops-Web-Apps.git'
+				git branch: 'main', url: 'https://github.com/SShaikDevops/devops-web-apps.git'
 
 			}
 		}
@@ -27,7 +27,7 @@ pipeline
 
 		stage("Copying the War file to Job Location"){
 			steps{
-				sh 'cp /var/lib/jenkins/workspace/narayana-pipeline-project/target/*.war /var/lib/jenkins/workspace/narayana-pipeline-project'
+				sh 'cp /var/lib/jenkins/workspace/subahan-pipeline-project/target/*.war /var/lib/jenkins/workspace/subahan-pipeline-project'
 
 		}
 	}
@@ -38,7 +38,7 @@ pipeline
 	             }
 	   stage("Docker Image taging"){
 			steps{
-			sh 'docker image tag $JOB_NAME:v1.$BUILD_ID narayanareddy143/$JOB_NAME:v1.$BUILD_ID'
+			sh 'docker image tag $JOB_NAME:v1.$BUILD_ID subahan786/$JOB_NAME:v1.$BUILD_ID'
 			
 		}
 
