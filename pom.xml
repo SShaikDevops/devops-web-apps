@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jdevs</groupId>
-  <artifactId>narayana</artifactId>
+  <artifactId>subahan</artifactId>
   <version>1</version>
   <packaging>war</packaging>
   <build>
@@ -36,12 +36,12 @@ Here we are giving war package format
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://192.168.120.143:8081/repository/narayana-release/</url>
+            <url>http://192.168.145.143:8081/repository/Cloud-Gen-release/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://192.168.120.143:8081/repository/narayana-snap/</url>
+            <url>http://192.168.145.143:8081/repository/Cloud-Gen-snap/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
